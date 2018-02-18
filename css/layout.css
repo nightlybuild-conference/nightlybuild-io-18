@@ -1,7 +1,19 @@
 /* Layout helpers */
 
 .layout-section {
-    padding-top: 2vw;
+    padding-top: 2rem;
+}
+
+.layout-section--highlight {
+    background-color: var(--background--highlight);
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color: var(--background-color);
+}
+
+.layout-section--highlight * {
+    color: var(--background-color);
 }
 
 .layout-section:last-of-type {

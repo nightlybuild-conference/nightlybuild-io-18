@@ -67,7 +67,7 @@
     margin: 0 -2vw 2rem;
     width: calc(100% + 4vw);
     padding: 2rem 0;
-    background-color: #e5dadc;
+    background-color: var(--background--highlight);
     text-align: center;
 }
 
