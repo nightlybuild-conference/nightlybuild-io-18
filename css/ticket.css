@@ -1,0 +1,44 @@
+/**
+ * Ticket
+ */
+.ticket {
+    margin: 0;
+    max-width: 45em;
+    min-height: 28em;
+    padding: 2em 2em 2em 2em;
+}
+
+@media (min-width: 45em) {
+    .ticket {
+        padding-right: 10em;
+        background: url('/img/ticket.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 42em) {
+    .ticket {
+        padding-right: 12em;
+    }
+}
+
+.ticket .button {
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.ticket h3 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.ticket h3 .normal {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.ticket h3,
+.ticket strong {
+    color: #fff;
+}

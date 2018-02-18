@@ -1,0 +1,128 @@
+<html lang="en">
+    <head>
+        <% include 'lib/views/blocks/layout/_head' %>
+    </head>
+    <body>
+        <header class="header" role="banner">
+            <nav class="navigation" role="navigation">
+                <a class="logo-container" href="/" title="Nightlybuild.io">
+                    <img class="logo" src="/img/logo-2016.svg" alt="Nightlybuild">
+                </a>
+                <ul class="navigation-list">
+                    <li <% if @page == 'index' : %>class="is-active"<% end %>>
+                        <a href="/">NightlyBuild 2017</a>
+                    </li>
+                </ul>
+
+                <div class="dropdown archive-dropdown">
+                    <a class="dropdown-handle" href="#" title="Open/Close Archive">
+                        <span class="dropdown-handleIcon"></span>
+                        <span class="dropdown-handleText">2018</span>
+                    </a>
+
+                    <ul class="dropdown-content">
+                        <li class="dropdown-listItem">
+                            <a href="https://2017.nightlybuild.io/">2017</a>
+                        </li>
+                        <li class="dropdown-listItem">
+                            <a href="https://2016.nightlybuild.io/">2016</a>
+                        </li>
+                        <li class="dropdown-listItem">
+                            <a href="https://2015.nightlybuild.io/">2015</a>
+                        </li>
+                        <li class="dropdown-listItem">
+                            <a href="https://2014.nightlybuild.io/">2014</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <h1>NightlyBuild <span class="special-color">2018</span>.</h1>
+            <p><strong>Cologne, Germany.</strong> <span class="special-color"><strong>August, 31st</strong> 2018</span>.</p>
+
+
+            <!--
+            <% if @page != 'partners' : %>
+
+            <aside role="complementary">
+                <div class="top-partners">
+                    <h3>supported by</h3>
+                    <ul class="footer-partnerList">
+                        <li>
+                            <a href="/partner#...">
+                                <img class="image" src="img/sponsors/...-logo.svg">
+                            </a>
+                        </li>
+                    </ul>
+                    <p>&hellip;<a href="/partners">and more</a>.</p>
+                </div>
+            </aside>
+
+            <% end %>
+            -->
+
+            <h3 class="slogan">A hand-crafted after work conference for web enthusiasts loving technology, design and inspiration in Cologne, Germany.</h3>
+        </header>
+
+        <main class="main" role="main">
+            <% content %>
+        </main>
+
+        <footer class="footer" role="complementary">
+
+            <!--
+            <% if @page != 'partners' : %>
+            <div class="footer-partner">
+                <ul class="footer-partnerList">
+                    <li>
+                        <a href="/partner#...">
+                            <img class="image" src="img/sponsors/...-logo.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <% end %>
+            -->
+
+            <div class="footer-organizers" id="organizers">
+                <h3>This event is brought to you by yours truly</h3>
+                <ul>
+                    <li>
+                        <a href="//drublic.de/" title="Website of Hans Chr. Reinl">
+                            <img src="img/team/hans.jpg" alt="Hans Chr. Reinl">
+                            <p>Hans Chr. Reinl</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="//twitter.com/asciidisco" title="Twitter account of Sebastian Golasch">
+                            <img src="img/team/sebastian.jpg" alt="Sebastian Golasch">
+                            <p>Sebastian Golasch</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="//helloanselm.com/" title="Website of Anselm Hannemann">
+                            <img src="img/team/anselm.jpg" alt="Anselm Hannemann">
+                            <p>Anselm Hannemann</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="//twitter.com/herr_divad" title="Twitter account of David Yasli">
+                            <img src="img/team/david.jpg" alt="David Yasli">
+                            <p>David Yasli</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="footer-nav">
+                <li><a href="/legal">Legal Notice</a></li>
+                <li><a href="/coc">Code Of Conduct</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="https://facebook.com/nightlybuildio">Facebook</a></li>
+                <li><a href="https://twitter.com/nightlybuildio">Twitter</a></li>
+            </ul>
+        </footer>
+
+        <% include 'lib/views/blocks/layout/_foot' %>
+    </body>
+</html>

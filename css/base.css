@@ -1,0 +1,25 @@
+:root {
+    --background-color: #263238;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    background-color: var(--background-color);
+    color: #e5dadc;
+    font-family: 'Helvetica Neue', Helvetica, Geneva, sans-serif;
+}
+
+body {
+    padding: 10em 2vw 3em 2vw;
+}

@@ -1,0 +1,49 @@
+.schedule {
+    margin: 1em auto 3em;
+    width: 98%;
+    max-width: 100%;
+    border-spacing: 5px;
+}
+
+@media (min-width: 45em) {
+    .schedule {
+        width: 65%;
+    }
+}
+
+@media (min-width: 64em) {
+    .schedule {
+        width: 45%;
+    }
+}
+
+.schedule td {
+    min-width: 5rem;
+    padding: 1.5em 0;
+    border-top: 2px solid #7DCFB6;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-left: 0;
+    border-right: 2px;
+    vertical-align: top;
+}
+
+@media (min-width: 45em) {
+    .schedule td {
+        min-width: 10em;
+    }
+}
+
+.schedule td:first-of-type {
+    padding-right: 1em;
+    text-align: right;
+}
+
+.schedule h3,
+.schedule p {
+    margin: 0;
+}
+
+.schedule h3 {
+    margin-top: -0.15em;
+}

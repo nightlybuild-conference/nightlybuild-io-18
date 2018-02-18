@@ -1,0 +1,61 @@
+/* Partners */
+
+.partners {
+    margin: 3rem 0 8rem;
+}
+
+.partners h4 {
+    font-size: 2em;
+}
+
+.partner-list,
+.image-list,
+.friends-list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.partner-list .link,
+.image-list .link,
+.friends-list .link {
+    transition: transform 0.3s;
+}
+
+.partner-list .link:hover,
+.image-list .link:hover,
+.friends-list .link:hover,
+.partner-list .link:focus,
+.image-list .link:focus,
+.friends-list .link:focus {
+    transform: scale(1.02);
+}
+
+@media (max-width: 45em) {
+    .partner-list,
+    .friends-list {
+        display: block;
+    }
+}
+
+.partner-list li,
+.friends-list li {
+    display: flex;
+    max-width: 32%;
+    margin-right: 2%;
+}
+
+.partner-list li:last-child,
+.friends-list li:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 45em) {
+    .partner-list,
+    .friends-list {
+        display: block;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 1.3rem;
+    }
+}

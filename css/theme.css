@@ -1,0 +1,59 @@
+.theme {
+    margin-bottom: 3rem;
+    width: 60em;
+    max-width: 100%;
+    text-align: right;
+}
+
+.theme blockquote,
+.theme .subline {
+    font-family: Georgia, serif;
+    font-size: 2.8em;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.theme .subline--left {
+    text-align: left;
+}
+
+.theme .subline--small {
+    font-size: 2em;
+    line-height: 1.4;
+}
+
+.theme h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.theme p {
+    font-size: 1.2em;
+    line-height: 1.4;
+    padding-left: 10%;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.theme ul p {
+    margin-bottom: 1rem;
+}
+
+.theme-owl {
+    display: none;
+}
+
+.theme--left {
+    text-align: left;
+}
+
+.theme--left p {
+    padding-left: 0;
+    padding-right: 10%;
+}
+
+@media (min-width: 80em) {
+    .theme {
+        position: relative;
+    }
+}

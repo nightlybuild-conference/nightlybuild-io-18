@@ -1,0 +1,47 @@
+/**
+ * Speaker
+ */
+
+.speaker {
+    padding: 1rem 2rem 2rem;
+    margin: 0;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+@media (min-width: 40em) {
+    .speaker {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media (min-width: 80em) {
+    .speaker {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+.speaker--light {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.speaker_image {
+    max-width: 17rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.speaker_title {
+    font-size: 3rem;
+    line-height: 1;
+    margin: 1rem 0 0;
+}
+
+.speaker_subtitle {
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-top: 0;
+}

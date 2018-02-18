@@ -1,0 +1,27 @@
+/**
+ * COC
+ */
+.coc-contact {
+    width: 35em;
+    max-width: 100%;
+    margin: 4em auto;
+    border: 0.5em solid #e5dadc;
+    padding: 1em;
+    text-align: center;
+}
+
+.coc-contact h4,
+.coc-contact p,
+.coc-contact a {
+    color: #e5dadc;
+}
+
+.coc-contact h4 {
+    font-size: 1.25em;
+    margin: 0.5em 0 0.35em 0;
+}
+
+.coc-contact p {
+    font-size: 1rem;
+    line-height: 2;
+}

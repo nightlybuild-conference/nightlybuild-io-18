@@ -1,0 +1,20 @@
+/* Helper classes */
+
+.hidden {
+    display: none;
+}
+
+.special-color {
+    color: #7DCFB6;
+}
+
+/**
+ * Clearfix
+ */
+
+.clearfix::after,
+.clearfix::before {
+    content: '';
+    display: table;
+    clear: both;
+}

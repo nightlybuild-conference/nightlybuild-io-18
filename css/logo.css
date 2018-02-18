@@ -1,0 +1,18 @@
+.logo {
+    display: inline-block;
+    position: relative;
+    z-index: 99999;
+    height: 7em;
+    width: 7em;
+    transition: 125ms all ease-in-out;
+    will-change: auto;
+}
+
+@media (min-width: 45em) {
+    .is-narrow .logo {
+        position: absolute;
+        left: 2vw;
+        height: 3.25em;
+        width: 3.25em;
+    }
+}

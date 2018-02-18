@@ -1,0 +1,77 @@
+/* Navigation */
+
+.navigation {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #e5dadc;
+    color: var(--background-color);
+    text-align: center;
+}
+
+@media (max-width: 45em) {
+    .navigation {
+        position: static;
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+}
+
+.navigation-list {
+    list-style: none;
+    padding: 0;
+    font-weight: bold;
+}
+
+@media (max-width: 56em) {
+    .is-narrow .navigation-list {
+        padding-right: 2.5rem;
+    }
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin: 0 0.5em;
+    letter-spacing: 0.05em;
+}
+
+.navigation-list a,
+.navigation-list a:visited,
+.navigation-list a:active {
+    display: inline-block;
+    padding: 0.25em;
+    color: var(--background-color);
+    text-decoration: none;
+}
+
+@media (max-width: 45em) {
+    .navigation-list a {
+        padding: 0.5em;
+        margin: 0.5em;
+    }
+}
+
+.navigation-list li.is-active a,
+.navigation-list a:hover,
+.navigation-list a:focus {
+    color: var(--background-color);
+    border-bottom: 2px solid var(--background-color);
+}
+
+.navigation-list a.button--in-nav {
+    display: inline-block;
+    transition: none;
+    padding: 0.75em 1em;
+    background-color: var(--background-color);
+    color: #e5dadc;
+    border-radius: 3px;
+}
+
+.navigation-list .button--in-nav:hover,
+.navigation-list .button--in-nav:focus {
+    border-bottom: 0;
+    color: var(--background-color);
+}
+

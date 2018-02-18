@@ -1,0 +1,141 @@
+/* Footer */
+
+.footer {
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    display: inline-block;
+}
+
+/* Footer navigation */
+
+.footer-nav li {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.footer-nav li a {
+    margin: 0.5em;
+    padding: 0.25em;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:focus {
+    text-decoration: none;
+}
+
+.footer-organizers {
+    padding: 1rem 0;
+}
+
+.footer-organizers li {
+    display: inline-block;
+    width: 5%;
+    margin: 1em;
+    vertical-align: top;
+    min-width: 5rem;
+}
+
+.footer-organizers img {
+    transition: transform 0.3s;
+    border-radius: 50%;
+    width: 100%;
+}
+
+.footer-organizers p {
+    font-size: 0.85rem;
+}
+
+.footer-organizers a {
+    display: block;
+    text-decoration: none;
+}
+
+.footer-organizers a:hover img,
+.footer-organizers a:focus img {
+    transform: scale(1.1);
+}
+
+.footer-partner,
+.top-partners {
+    margin: 0 -2vw 2rem;
+    width: calc(100% + 4vw);
+    padding: 2rem 0;
+    background-color: #e5dadc;
+    text-align: center;
+}
+
+.footer-partner h3,
+.top-partners h3,
+.footer-partner p,
+.top-partners p,
+.footer-partner a,
+.top-partners a,
+.footer-partner li,
+.top-partners li {
+    color: var(--background-color);
+}
+
+.top-partners {
+    position: relative;
+    display: inline-block;
+    width: 35em;
+    padding: 1rem 0 0 0;
+    margin-bottom: 0;
+    transform: skewX(-25deg) translateX(-5rem);
+    text-align: left;
+    overflow: hidden;
+}
+
+.top-partners h3 {
+    font-size: 1rem;
+}
+
+.top-partners>* {
+    transform: skewX(25deg) translateX(5.5rem);
+}
+
+.top-partners>p {
+    margin: -1rem 0 2rem;
+    transform: skewX(25deg) translateX(9.75rem);
+}
+
+.footer-partnerList {
+    padding-left: 1.4rem;
+}
+
+@media (max-width: 32em) {
+    .top-partners {
+        width: 100%;
+        padding-left: 1rem;
+    }
+    .top-partners,
+    .top-partners>*,
+    .top-partners>p {
+        transform: none;
+    }
+}
+
+.footer-partnerList li {
+    display: inline-block;
+    width: 10%;
+    margin: 1em;
+    vertical-align: middle;
+    min-width: 7rem;
+}
+
+.footer-partnerList a:hover img,
+.footer-partnerList a:focus img {
+    transform: scale(1.1);
+}
+
+.footer-partnerList img {
+    transition: transform 0.3s;
+    width: 100%;
+}

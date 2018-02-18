@@ -1,0 +1,51 @@
+{
+  "name": "nightlybuild-io-2017",
+  "version": "0.1.0",
+  "description": "website of the Nightlybuild Conference 2017",
+  "main": "index.js",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "nodemon": "^1.9.1",
+    "onchange": "^2.4.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^8.0.0",
+    "body-parser": "^1.14.1",
+    "cssnano": "^3.10.0",
+    "ect": "^0.5.9",
+    "express": "^4.13.3",
+    "jquery": "^2.1.4",
+    "normalize.css": "^8.0.0",
+    "postcss": "^6.0.19",
+    "postcss-cli": "^5.0.0",
+    "postcss-custom-properties": "^7.0.0",
+    "postcss-import": "^11.1.0",
+    "uglifyjs": "^2.4.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "node_modules/.bin/postcss --config .postcssrc.js --dir \"public/css/\" \"css/main.css\"",
+    "js": "uglifyjs js/main.js -c -m -o public/js/main.js --source-map public/js/main.js.map --source-map-url /js/main.js.map",
+    "images": "cp -R img/* public/img/",
+    "mkdirp": "mkdir -p public/js public/img public/css",
+    "build": "npm run mkdirp && npm run images && npm run css && npm run js",
+    "serve": "npm run mkdirp && npm run images && npm run build && npm run watch:nodejs & npm run watch:css & npm run watch:js",
+    "start": "yarn serve",
+    "watch:nodejs": "nodemon index.js",
+    "watch:css": "onchange '**/*.css' -- npm run css",
+    "watch:js": "onchange 'js/**/*.js' -- npm run js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nightlybuild-conference/nightlybuild-io-2017.git"
+  },
+  "keywords": [
+    "None"
+  ],
+  "author": "The nightlybuilders",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nightlybuild-conference/nightlybuild-io-2017/issues"
+  },
+  "homepage": "https://nightlybuild.io/"
+}
