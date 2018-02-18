@@ -14,7 +14,7 @@
     "cssnano": "^3.10.0",
     "ect": "^0.5.9",
     "express": "^4.13.3",
-    "jquery": "^2.1.4",
+    "jquery": "^3",
     "normalize.css": "^8.0.0",
     "postcss": "^6.0.19",
     "postcss-cli": "^5.0.0",
