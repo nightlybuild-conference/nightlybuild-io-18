@@ -20,12 +20,12 @@
     "postcss-cli": "^5.0.0",
     "postcss-custom-properties": "^7.0.0",
     "postcss-import": "^11.1.0",
-    "uglifyjs": "^2.4.10"
+    "uglify-js": "^3.3.12"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "css": "node_modules/.bin/postcss --config .postcssrc.js --dir \"public/css/\" \"css/main.css\"",
-    "js": "uglifyjs js/main.js -c -m -o public/js/main.js --source-map public/js/main.js.map --source-map-url /js/main.js.map",
+    "js": "uglifyjs js/main.js --compress --mangle -o public/js/main.js",
     "images": "cp -R img/* public/img/",
     "mkdirp": "mkdir -p public/js public/img public/css",
     "build": "npm run mkdirp && npm run images && npm run css && npm run js",
