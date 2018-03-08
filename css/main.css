@@ -1,6 +1,9 @@
 @import '../node_modules/normalize.css/normalize.css';
+
 @import './base.css';
 @import './helper.css';
+@import './typo.css';
+
 @import './layout.css';
 @import './header.css';
 @import './logo.css';
@@ -196,7 +199,8 @@ input[type='submit'] {
     min-height: 35em;
 }
 
-.article {
+.article,
+.section {
     margin-left: auto;
     margin-right: auto;
     max-width: 60em;
