@@ -206,6 +206,16 @@ input[type='submit'] {
     font-size: 1.25rem;
 }
 
+.util_no-margin--top {
+    margin-top: 0;
+}
+
+.article .headline--top-line {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
 .text-image-overlay {
     position: relative;
     margin: 2em 0;
