@@ -2,4 +2,10 @@ RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteCond %{ENV:HTTPS} !=on
 RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+# Default nightlybuild.io and www.nightlybuild.io to 2018.nightlybuild.io
+RewriteCond %{HTTP_HOST} ^(www.)?nightlybuild\.io$ [NC]
+RewriteRule .* https://2018.nightlybuild.io%{REQUEST_URI} [R=302,L]
+
+# Redirect the request to the internally opened node.js service port
 RewriteRule ^(.*) http://localhost:62567/$1 [P]
