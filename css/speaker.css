@@ -1,47 +1,82 @@
 /**
  * Speaker
  */
-
-.speaker {
-    padding: 1rem 2rem 2rem;
-    margin: 0;
-    text-align: center;
-    border-radius: 0.5rem;
+:root {
+    --speaker-border-radius: 3px;
 }
 
-@media (min-width: 40em) {
-    .speaker {
-        float: left;
-        width: 50%;
+.speakers {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+@media (min-width: 32em) {
+    .speakers {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (min-width: 80em) {
-    .speaker {
-        float: left;
-        width: 33.33%;
+@media (min-width: 54em) {
+    .speakers {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-.speaker--light {
+.speakers_speaker {
+    display: block;
     background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--speaker-border-radius);
+    overflow: hidden;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4),
+                0 2px 2px 0 rgba(0, 0, 0, 0.3),
+                0 3px 1px -2px rgba(0, 0, 0, 0.28);
+    text-align: left;
+    text-decoration: none;
 }
 
-.speaker_image {
-    max-width: 17rem;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
+.speakers_speaker_header {
+    position: relative;
 }
 
-.speaker_title {
-    font-size: 3rem;
-    line-height: 1;
-    margin: 1rem 0 0;
+.speakers_speaker_header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 }
 
-.speaker_subtitle {
-    font-size: 1.25rem;
-    line-height: 1;
-    margin-top: 0;
+.speakers_speaker_image {
+    display: block;
+    max-width: 100%;
+    border-radius: var(--speaker-border-radius) var(--speaker-border-radius) 0 0;
+    overflow: hidden;
+}
+
+.speakers_speaker_title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.speakers_content {
+    margin: 1rem;
+}
+
+.article .speakers_content p {
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.speakers_speaker_footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem;
 }
