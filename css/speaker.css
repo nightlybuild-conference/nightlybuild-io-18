@@ -35,6 +35,10 @@
     text-decoration: none;
 }
 
+.speakers_speaker--light {
+    background: rgba(255, 255, 255, 0.4);
+}
+
 .speakers_speaker_header {
     position: relative;
 }
