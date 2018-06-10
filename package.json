@@ -24,7 +24,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "postcss --config .postcssrc.js --input public/css/ css/main.css",
+    "css": "postcss --config .postcssrc.js public/css/ -o css/main.css",
     "js": "uglifyjs js/main.js --compress --mangle -o public/js/main.js",
     "images": "cp -R img/* public/img/",
     "mkdirp": "mkdir -p public/js public/img public/css",
