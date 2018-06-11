@@ -24,6 +24,7 @@
 }
 
 .speakers_speaker {
+    position: relative;
     display: block;
     background: rgba(255, 255, 255, 0.2);
     border-radius: var(--speaker-border-radius);
@@ -33,6 +34,7 @@
                 0 3px 1px -2px rgba(0, 0, 0, 0.28);
     text-align: left;
     text-decoration: none;
+    padding-bottom: 4.6875rem;
 }
 
 .speakers_speaker--light {
@@ -81,6 +83,10 @@
 }
 
 .speakers_speaker_footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     padding: 1rem;
 }
