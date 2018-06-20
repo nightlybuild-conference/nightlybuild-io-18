@@ -8,8 +8,6 @@
 @import './header.css';
 @import './logo.css';
 @import './navigation.css';
-@import './speaker.css';
-@import './sponsor.css';
 @import './ticket.css';
 @import './footer.css';
 @import './theme.css';
@@ -19,6 +17,7 @@
 @import './schedule.css';
 @import './colloq.css';
 @import './button.css';
+@import './cards.css';
 
 /* Archive */
 
