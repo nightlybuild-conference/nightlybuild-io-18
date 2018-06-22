@@ -5,6 +5,22 @@
     text-align: right;
 }
 
+.theme-cancellation {
+    text-align: left;
+}
+
+.theme-cancellation h3 {
+    margin-top: 0;
+    color: #db222a;
+}
+
+.theme-contrast {
+    padding: 1rem;
+    background-color: #e5dadc;
+    color: #263238;
+    text-align: left;
+}
+
 .theme blockquote,
 .theme .subline {
     font-family: Georgia, serif;
