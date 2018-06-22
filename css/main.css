@@ -19,6 +19,13 @@
 @import './button.css';
 @import './cards.css';
 
+/* Cancellation */
+
+#cancellation h2 {
+    color: #db222a;
+    border-bottom: 0.4rem solid #db222a;
+}
+
 /* Archive */
 
 .archive-dropdown {
